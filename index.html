@@ -6,7 +6,7 @@
   <title>FlashDrop Motoboy</title>
   <meta name="theme-color" content="#f5a623">
   <meta name="description" content="App de entregas FlashDrop para motoboys">
-  <link rel="manifest" href="/manifest.json">
+  <link rel="manifest" href="./manifest.json">
   <link rel="apple-touch-icon" href="https://flashdrop-frontend-six.vercel.app/icon-192.png">
   <style>
     body {
@@ -22,10 +22,6 @@
       text-align: center;
       color: #f5a623;
     }
-    .loader img {
-      width: 80px;
-      margin-bottom: 16px;
-    }
     .loader p {
       font-size: 16px;
       color: #fff;
@@ -37,14 +33,14 @@
     <p>Carregando FlashDrop...</p>
   </div>
   <script>
-    // Registrar Service Worker
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
+      navigator.serviceWorker.register('./sw.js')
         .then(() => console.log('SW registrado'))
         .catch(e => console.log('SW erro:', e));
     }
-    // Redirecionar para o app
-    window.location.href = 'https://flashdrop-frontend-six.vercel.app/motoboy.html';
+    setTimeout(function() {
+      window.location.href = 'https://flashdrop-frontend-six.vercel.app/motoboy.html';
+    }, 500);
   </script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+{
+  "name": "FlashDrop Motoboy",
+  "short_name": "FlashDrop",
+  "description": "App de entregas FlashDrop para motoboys",
+  "start_url": "https://flashdrop-frontend-six.vercel.app/motoboy.html",
+  "scope": "https://flashdrop-frontend-six.vercel.app/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1a2e",
+  "theme_color": "#f5a623",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "https://flashdrop-frontend-six.vercel.app/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "https://flashdrop-frontend-six.vercel.app/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

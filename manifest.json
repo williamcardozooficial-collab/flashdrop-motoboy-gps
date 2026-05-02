@@ -11,13 +11,19 @@
   "lang": "pt-BR",
   "icons": [
     {
-      "src": "https://flashdrop-frontend-six.vercel.app/icon-192.png",
+      "src": "https://williamcardozooficial-collab.github.io/flashdrop-motoboy-gps/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "https://via.placeholder.com/192/f5a623/1a1a2e?text=FD",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "https://flashdrop-frontend-six.vercel.app/icon-512.png",
+      "src": "https://via.placeholder.com/512/f5a623/1a1a2e?text=FD",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"

@@ -1,1 +1,50 @@
-<!-- FlashDrop Motoboy GPS --><script>window.location.href='https://flashdrop-frontend-six.vercel.app/motoboy.html'</script>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlashDrop Motoboy</title>
+  <meta name="theme-color" content="#f5a623">
+  <meta name="description" content="App de entregas FlashDrop para motoboys">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="apple-touch-icon" href="https://flashdrop-frontend-six.vercel.app/icon-192.png">
+  <style>
+    body {
+      margin: 0;
+      background: #1a1a2e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: sans-serif;
+    }
+    .loader {
+      text-align: center;
+      color: #f5a623;
+    }
+    .loader img {
+      width: 80px;
+      margin-bottom: 16px;
+    }
+    .loader p {
+      font-size: 16px;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <p>Carregando FlashDrop...</p>
+  </div>
+  <script>
+    // Registrar Service Worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('SW registrado'))
+        .catch(e => console.log('SW erro:', e));
+    }
+    // Redirecionar para o app
+    window.location.href = 'https://flashdrop-frontend-six.vercel.app/motoboy.html';
+  </script>
+</body>
+</html>
